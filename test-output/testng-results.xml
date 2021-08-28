@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-26T11:00:19 IST" name="Suite" finished-at="2021-08-26T11:01:52 IST" duration-ms="92909">
+    <groups>
+      <group name="regressionTest">
+        <method signature="SearchProductTest.SearchProductByCommissionRate()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" name="SearchProductByCommissionRate" class="com.vtiger.takebizglobal.productTestcases.SearchProductTest"/>
+        <method signature="SearchProductTest.SearchProductByPartNumber()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" name="SearchProductByPartNumber" class="com.vtiger.takebizglobal.productTestcases.SearchProductTest"/>
+      </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="SearchProductTest.SearchProductByProductNumber()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" name="SearchProductByProductNumber" class="com.vtiger.takebizglobal.productTestcases.SearchProductTest"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test started-at="2021-08-26T11:00:19 IST" name="Test" finished-at="2021-08-26T11:01:52 IST" duration-ms="92909">
+      <class name="com.vtiger.takebizglobal.productTestcases.SearchProductTest">
+        <test-method is-config="true" signature="configureBeforeClass()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:00:19 IST" name="configureBeforeClass" finished-at="2021-08-26T11:00:24 IST" duration-ms="4634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureBeforeClass -->
+        <test-method is-config="true" signature="configureBeforeMethod()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:00:24 IST" name="configureBeforeMethod" finished-at="2021-08-26T11:00:29 IST" duration-ms="5078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureBeforeMethod -->
+        <test-method signature="SearchProductByCommissionRate()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:00:29 IST" name="SearchProductByCommissionRate" finished-at="2021-08-26T11:00:47 IST" duration-ms="17562" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at com.vtiger.takebizglobal.pomrepositorylib.ProductsPage.searchProduct(ProductsPage.java:163)
+at com.vtiger.takebizglobal.productTestcases.SearchProductTest.SearchProductByCommissionRate(SearchProductTest.java:94)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchProductByCommissionRate -->
+        <test-method is-config="true" signature="configureAfterMethod()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:00:47 IST" name="configureAfterMethod" finished-at="2021-08-26T11:00:48 IST" duration-ms="1566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAfterMethod -->
+        <test-method is-config="true" signature="configureBeforeMethod()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:00:48 IST" name="configureBeforeMethod" finished-at="2021-08-26T11:00:52 IST" duration-ms="3433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureBeforeMethod -->
+        <test-method signature="SearchProductByPartNumber()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:00:52 IST" name="SearchProductByPartNumber" finished-at="2021-08-26T11:01:28 IST" duration-ms="35820" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='lvt small']/tbody/tr[last()]/td[contains(text(),'Part')]"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FUOBAD1', ip: '192.168.111.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Chetan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa855fc68beb174efeafebfdca3bcbb0
+*** Element info: {Using=xpath, value=//table[@class='lvt small']/tbody/tr[last()]/td[contains(text(),'Part')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='lvt small']/tbody/tr[last()]/td[contains(text(),'Part')]"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FUOBAD1', ip: '192.168.111.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Chetan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa855fc68beb174efeafebfdca3bcbb0
+*** Element info: {Using=xpath, value=//table[@class='lvt small']/tbody/tr[last()]/td[contains(text(),'Part')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.getText(Unknown Source)
+at com.vtiger.takebizglobal.pomrepositorylib.ProductsPage.searchProduct(ProductsPage.java:123)
+at com.vtiger.takebizglobal.productTestcases.SearchProductTest.SearchProductByPartNumber(SearchProductTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchProductByPartNumber -->
+        <test-method is-config="true" signature="configureAfterMethod()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:01:28 IST" name="configureAfterMethod" finished-at="2021-08-26T11:01:30 IST" duration-ms="1794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAfterMethod -->
+        <test-method is-config="true" signature="configureBeforeMethod()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:01:30 IST" name="configureBeforeMethod" finished-at="2021-08-26T11:01:33 IST" duration-ms="3131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureBeforeMethod -->
+        <test-method signature="SearchProductByProductNumber()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:01:33 IST" name="SearchProductByProductNumber" finished-at="2021-08-26T11:01:50 IST" duration-ms="16779" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.vtiger.takebizglobal.pomrepositorylib.ProductsPage.searchProduct(ProductsPage.java:110)
+at com.vtiger.takebizglobal.productTestcases.SearchProductTest.SearchProductByProductNumber(SearchProductTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchProductByProductNumber -->
+        <test-method is-config="true" signature="configureAfterMethod()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:01:50 IST" name="configureAfterMethod" finished-at="2021-08-26T11:01:51 IST" duration-ms="1474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAfterMethod -->
+        <test-method is-config="true" signature="configureAfterClass()[pri:0, instance:com.vtiger.takebizglobal.productTestcases.SearchProductTest@581ac8a8]" started-at="2021-08-26T11:01:51 IST" name="configureAfterClass" finished-at="2021-08-26T11:01:52 IST" duration-ms="947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAfterClass -->
+      </class> <!-- com.vtiger.takebizglobal.productTestcases.SearchProductTest -->
+      <class name="com.vtiger.takebizglobal.packagefordistributedExec.ClassForDitributedParallelExec">
+        <test-method signature="CreateProd()[pri:0, instance:com.vtiger.takebizglobal.packagefordistributedExec.ClassForDitributedParallelExec@66498326]" started-at="2021-08-26T11:00:19 IST" name="CreateProd" finished-at="2021-08-26T11:00:19 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProd -->
+        <test-method signature="CreateProdWithCommRate()[pri:0, instance:com.vtiger.takebizglobal.packagefordistributedExec.ClassForDitributedParallelExec@66498326]" started-at="2021-08-26T11:00:19 IST" name="CreateProdWithCommRate" finished-at="2021-08-26T11:00:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProdWithCommRate -->
+        <test-method signature="CreateProdWithPartNum()[pri:0, instance:com.vtiger.takebizglobal.packagefordistributedExec.ClassForDitributedParallelExec@66498326]" started-at="2021-08-26T11:00:19 IST" name="CreateProdWithPartNum" finished-at="2021-08-26T11:00:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProdWithPartNum -->
+      </class> <!-- com.vtiger.takebizglobal.packagefordistributedExec.ClassForDitributedParallelExec -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
